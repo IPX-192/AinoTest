@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CaliProductManager</class>
+ <widget class="QWidget" name="CaliProductManager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1429</width>
+    <height>616</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#CaliProductManager{
+	
+}
+</string>
+  </property>
+  <widget class="CusTableView" name="tabView_caliSetLeft" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>941</width>
+     <height>391</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="CusTableView" name="tabView_caliSetRight" native="true">
+   <property name="geometry">
+    <rect>
+     <x>990</x>
+     <y>50</y>
+     <width>371</width>
+     <height>296</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>100</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/resources/img/common/title.png);
+color: rgb(255, 255, 255);
+background-color: rgb(166, 166, 166);
+font: 700 12pt &quot;Microsoft YaHei UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>    校准品列表</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CusTableView</class>
+   <extends>QWidget</extends>
+   <header location="global">CusTableView.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,1686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1679</width>
+    <height>878</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>AINO</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnMain">
+        <property name="text">
+         <string>主页</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnApply">
+        <property name="text">
+         <string>申请</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnReagents">
+        <property name="text">
+         <string>试剂</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCalibration">
+        <property name="text">
+         <string>校准</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnQC">
+        <property name="text">
+         <string>质控</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnData">
+        <property name="text">
+         <string>数据</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnUse">
+        <property name="text">
+         <string>应用</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnStart">
+        <property name="text">
+         <string>启动</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnPause">
+        <property name="text">
+         <string>暂停</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnStop">
+        <property name="text">
+         <string>紧急停止</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnExit">
+        <property name="text">
+         <string>退出系统</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,9">
+      <property name="spacing">
+       <number>20</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>1677215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(170, 170, 255);</string>
+             </property>
+             <property name="text">
+              <string>M1状态</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(170, 170, 255);</string>
+             </property>
+             <property name="text">
+              <string>SSU状态</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="CSystemInfoBar" name="systemInfo" native="true"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QStackedWidget" name="mainStackWidget">
+        <property name="currentIndex">
+         <number>3</number>
+        </property>
+        <widget class="QWidget" name="main">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="PageMain" name="MachineAndGuide" native="true"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="apply">
+         <widget class="QLabel" name="label_5">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>160</y>
+            <width>301</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>申请</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="reagents">
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>160</y>
+            <width>301</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>试剂</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="calibration">
+         <widget class="QTabWidget" name="tabWidget_Cal">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>1571</width>
+            <height>731</height>
+           </rect>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>校准总览</string>
+           </attribute>
+           <widget class="QStackedWidget" name="stacked_Cali">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>10</y>
+              <width>1481</width>
+              <height>681</height>
+             </rect>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="Cali_OverView">
+             <widget class="CaliOverView" name="widget_3" native="true">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1441</width>
+                <height>581</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+             </widget>
+             <widget class="QWidget" name="horizontalLayoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>590</y>
+                <width>1031</width>
+                <height>80</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_CaliList">
+                 <property name="minimumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>申请列表</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_CaliApplyCancle">
+                 <property name="minimumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>取消</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_CaliSure">
+                 <property name="minimumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>保存</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="Cali_ApplyList">
+             <widget class="CaliApplyList" name="widget_4" native="true">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>0</y>
+                <width>1371</width>
+                <height>571</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QWidget" name="horizontalLayoutWidget_2">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>590</y>
+                <width>701</width>
+                <height>80</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <widget class="QPushButton" name="btn_CancleCali">
+                 <property name="minimumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>取消校准</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_BackCaliOverView">
+                 <property name="minimumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>返回</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="title">
+            <string>校准结果</string>
+           </attribute>
+           <widget class="QStackedWidget" name="stacked_CaliRes">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>1531</width>
+              <height>691</height>
+             </rect>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="page">
+             <widget class="CaliResult" name="widget_5" native="true">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>30</y>
+                <width>1501</width>
+                <height>571</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <widget class="PopQueryCaliResult" name="popup_CaliQuery" native="true">
+               <property name="geometry">
+                <rect>
+                 <x>60</x>
+                 <y>10</y>
+                 <width>171</width>
+                 <height>111</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="PopCheckCaliCurve" name="popup_CheckCaliCurve" native="true">
+               <property name="geometry">
+                <rect>
+                 <x>60</x>
+                 <y>160</y>
+                 <width>191</width>
+                 <height>101</height>
+                </rect>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QWidget" name="horizontalLayoutWidget_3">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>610</y>
+                <width>1164</width>
+                <height>80</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <item>
+                <widget class="QPushButton" name="btn_CaliResRefresh">
+                 <property name="minimumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>刷新</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_CaliResCurve">
+                 <property name="minimumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>查看曲线</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_CaliResDetails">
+                 <property name="minimumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>详情</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_CaliResQuery">
+                 <property name="minimumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>查询</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_CaliResTrend">
+                 <property name="minimumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>趋势</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_CaliResExport">
+                 <property name="minimumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>导出</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_CaliResPrint">
+                 <property name="minimumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>打印</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_CaliResDel">
+                 <property name="minimumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>删除</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="page_2">
+             <widget class="CaliResDetails" name="widget_6" native="true">
+              <property name="geometry">
+               <rect>
+                <x>30</x>
+                <y>20</y>
+                <width>1501</width>
+                <height>551</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="btn_CaliResDetailsBack">
+              <property name="geometry">
+               <rect>
+                <x>1200</x>
+                <y>610</y>
+                <width>140</width>
+                <height>45</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>140</width>
+                <height>45</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>140</width>
+                <height>45</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+              </property>
+              <property name="text">
+               <string>返回</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="page_3">
+             <widget class="QWidget" name="horizontalLayoutWidget_7">
+              <property name="geometry">
+               <rect>
+                <x>40</x>
+                <y>600</y>
+                <width>1031</width>
+                <height>80</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_9">
+               <item>
+                <spacer name="horizontalSpacer_4">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_CaliThreadQuery">
+                 <property name="minimumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>查询</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_CaliThreadBack">
+                 <property name="minimumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>140</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>返回</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_6">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+             <widget class="CaliResTrend" name="widget" native="true">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>1501</width>
+                <height>581</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_3">
+           <attribute name="title">
+            <string>校准曲线</string>
+           </attribute>
+           <widget class="QWidget" name="horizontalLayoutWidget_4">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>610</y>
+              <width>1101</width>
+              <height>80</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QPushButton" name="btn_CaliMainCurve">
+               <property name="minimumSize">
+                <size>
+                 <width>140</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>140</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}</string>
+               </property>
+               <property name="text">
+                <string>主曲线</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_CurveActivate">
+               <property name="minimumSize">
+                <size>
+                 <width>140</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>140</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}</string>
+               </property>
+               <property name="text">
+                <string>激活</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_CaliDecide">
+               <property name="minimumSize">
+                <size>
+                 <width>140</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>140</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}</string>
+               </property>
+               <property name="text">
+                <string>校准判定</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_CaliRecount">
+               <property name="minimumSize">
+                <size>
+                 <width>140</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>140</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}</string>
+               </property>
+               <property name="text">
+                <string>重新计算</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_CurveDelete">
+               <property name="minimumSize">
+                <size>
+                 <width>140</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>140</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}</string>
+               </property>
+               <property name="text">
+                <string>删除</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_CaliDetailPrint">
+               <property name="minimumSize">
+                <size>
+                 <width>140</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>140</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}</string>
+               </property>
+               <property name="text">
+                <string>打印</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="CaliCurve" name="widget_7" native="true">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>1301</width>
+              <height>591</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QWidget" name="horizontalLayoutWidget_6">
+            <property name="geometry">
+             <rect>
+              <x>1310</x>
+              <y>10</y>
+              <width>239</width>
+              <height>91</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QPushButton" name="pushButton_3">
+               <property name="text">
+                <string>ALL</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_2">
+               <property name="text">
+                <string>M1</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton">
+               <property name="text">
+                <string>M2</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_4">
+           <attribute name="title">
+            <string>校准品设置</string>
+           </attribute>
+           <widget class="QWidget" name="horizontalLayoutWidget_5">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>610</y>
+              <width>1031</width>
+              <height>80</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <item>
+              <widget class="QPushButton" name="btn_CaliProductNew">
+               <property name="minimumSize">
+                <size>
+                 <width>140</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>140</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}</string>
+               </property>
+               <property name="text">
+                <string>新增</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_CaliProductEdit">
+               <property name="minimumSize">
+                <size>
+                 <width>140</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>140</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}</string>
+               </property>
+               <property name="text">
+                <string>编辑</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_CaliProductDel">
+               <property name="minimumSize">
+                <size>
+                 <width>140</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>140</width>
+                 <height>45</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}</string>
+               </property>
+               <property name="text">
+                <string>删除</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="CaliProductManager" name="widget_8" native="true">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>20</y>
+              <width>1471</width>
+              <height>551</height>
+             </rect>
+            </property>
+            <widget class="PopNewCaliProduct" name="popup_NewCaliPro" native="true">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>221</width>
+               <height>131</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="QC">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QTabWidget" name="tabWidget">
+            <property name="currentIndex">
+             <number>4</number>
+            </property>
+            <widget class="QWidget" name="QCOverViewTab">
+             <attribute name="title">
+              <string>质控总览</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0">
+               <widget class="QStackedWidget" name="QCOverViewStackWidget">
+                <property name="currentIndex">
+                 <number>1</number>
+                </property>
+                <widget class="QCOverview" name="QCOverviewPage"/>
+                <widget class="QCApplyList" name="QCApplyListPage"/>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="QCResultTab">
+             <attribute name="title">
+              <string>质控结果</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_5">
+              <item row="0" column="0">
+               <widget class="QStackedWidget" name="QCResultStackWidget">
+                <property name="currentIndex">
+                 <number>2</number>
+                </property>
+                <widget class="QCResult" name="QCResultPage"/>
+                <widget class="QCResultQuery" name="QCResultQueryPage"/>
+                <widget class="QCResultDisplay" name="QCResultDisplayPage"/>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="QCAnalysisTab">
+             <attribute name="title">
+              <string>质控分析</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="0" column="0">
+               <widget class="QStackedWidget" name="QCAnalysisStackWidget">
+                <widget class="QCAnalysis" name="QCAnalysisHomePage"/>
+                <widget class="QCAnalysisQuery" name="QCAnalysisQueryPage"/>
+                <widget class="QCAnalysisTrend" name="QCAnalysisTrendPage"/>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="QCChartsTab">
+             <attribute name="title">
+              <string>质控图</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_7">
+              <item row="0" column="0">
+               <widget class="QStackedWidget" name="QCChartsStackWidget">
+                <widget class="QCChartLJ" name="QCChartsLJPage"/>
+                <widget class="QCChartTP" name="QCChartsTPPage"/>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="QCSettingTab">
+             <attribute name="title">
+              <string>质控设置</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_8">
+              <item row="0" column="0">
+               <widget class="QStackedWidget" name="QCSettingStackWidget">
+                <property name="currentIndex">
+                 <number>3</number>
+                </property>
+                <widget class="QCSetting" name="QCSettingPage"/>
+                <widget class="QCSettingAddByScanf" name="QCAddByScanfPage"/>
+                <widget class="QCSettingAddByManual" name="QCAddByManual"/>
+                <widget class="QCSettingEdit" name="QCEditPage"/>
+                <widget class="QCSettinRule" name="QCSettingRulePage"/>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="data">
+         <widget class="QLabel" name="label_9">
+          <property name="geometry">
+           <rect>
+            <x>310</x>
+            <y>180</y>
+            <width>301</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>数据</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="use">
+         <widget class="QLabel" name="label_10">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>190</y>
+            <width>301</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>应用</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CSystemInfoBar</class>
+   <extends>QWidget</extends>
+   <header location="global">CSystemInfoBar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PageMain</class>
+   <extends>QWidget</extends>
+   <header location="global">PageMain.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCOverview</class>
+   <extends>QWidget</extends>
+   <header location="global">QCOverview.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCResult</class>
+   <extends>QWidget</extends>
+   <header location="global">QCResult.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CaliApplyList</class>
+   <extends>QWidget</extends>
+   <header location="global">CaliApplyList.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CaliOverView</class>
+   <extends>QWidget</extends>
+   <header location="global">CaliOverView.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CaliResult</class>
+   <extends>QWidget</extends>
+   <header location="global">CaliResult.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CaliResDetails</class>
+   <extends>QWidget</extends>
+   <header location="global">CaliResDetails.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CaliCurve</class>
+   <extends>QWidget</extends>
+   <header location="global">CaliCurve.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CaliProductManager</class>
+   <extends>QWidget</extends>
+   <header>CaliProductManager.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCApplyList</class>
+   <extends>QWidget</extends>
+   <header location="global">QCApplyList.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCResultQuery</class>
+   <extends>QWidget</extends>
+   <header location="global">QCResultQuery.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCResultDisplay</class>
+   <extends>QWidget</extends>
+   <header location="global">QCResultDisplay.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCAnalysis</class>
+   <extends>QWidget</extends>
+   <header location="global">QCAnalysis.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PopNewCaliProduct</class>
+   <extends>QWidget</extends>
+   <header location="global">PopNewCaliProduct.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCAnalysisTrend</class>
+   <extends>QWidget</extends>
+   <header location="global">QCAnalysisTrend.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCAnalysisQuery</class>
+   <extends>QWidget</extends>
+   <header location="global">QCAnalysisQuery.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCChartLJ</class>
+   <extends>QWidget</extends>
+   <header location="global">QCChartLJ.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCChartTP</class>
+   <extends>QWidget</extends>
+   <header location="global">QCChartTP.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PopQueryCaliResult</class>
+   <extends>QWidget</extends>
+   <header>popquerycaliresult.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCSetting</class>
+   <extends>QWidget</extends>
+   <header location="global">QCSetting.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCSettingAddByScanf</class>
+   <extends>QWidget</extends>
+   <header location="global">QCSettingAddByScanf.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCSettingAddByManual</class>
+   <extends>QWidget</extends>
+   <header location="global">QCSettingAddByManual.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCSettingEdit</class>
+   <extends>QWidget</extends>
+   <header location="global">QCSettingEdit.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCSettinRule</class>
+   <extends>QWidget</extends>
+   <header location="global">QCSettinRule.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CaliResTrend</class>
+   <extends>QWidget</extends>
+   <header location="global">CaliResTrend.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PopCheckCaliCurve</class>
+   <extends>QWidget</extends>
+   <header>PopCheckCaliCurve.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

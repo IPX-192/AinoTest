@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/img/stateBar/test.png</file>
+        <file>resources/img/background.png</file>
+        <file>resources/img/common/btnClicked.png</file>
+        <file>resources/img/common/btnNomal.png</file>
+        <file>resources/img/common/title.png</file>
+        <file>resources/img/Checked.png</file>
+        <file>resources/img/UnChecked.png</file>
+    </qresource>
+</RCC>

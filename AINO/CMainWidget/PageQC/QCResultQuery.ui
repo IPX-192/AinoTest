@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QCResultQuery</class>
+ <widget class="QWidget" name="QCResultQuery">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1505</width>
+    <height>748</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true">font: 290 28pt &quot;Microsoft YaHei UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>质控结果调价查询</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="DateTimeArea">
+     <property name="styleSheet">
+      <string notr="true">QFrame#DateTimeArea{
+	border: 1px solid black;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout" columnstretch="1,9">
+      <item row="0" column="0" rowspan="2">
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">font: 24pt &quot;Microsoft YaHei UI&quot;;</string>
+        </property>
+        <property name="text">
+         <string>时间范围：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,5,5">
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
+          </property>
+          <property name="text">
+           <string>从:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="startDateBtn">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 24pt &quot;Microsoft YaHei UI&quot;;</string>
+          </property>
+          <property name="text">
+           <string>起始日期</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="CusClockTimeAdjust" name="StartClockTimeArea" native="true"/>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,5,5">
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="styleSheet">
+           <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
+          </property>
+          <property name="text">
+           <string>到:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="endDateBtn">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 24pt &quot;Microsoft YaHei UI&quot;;</string>
+          </property>
+          <property name="text">
+           <string>结束日期</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="CusClockTimeAdjust" name="endClockTimeArea" native="true"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="QCProductsArea">
+     <property name="styleSheet">
+      <string notr="true">QFrame#QCProductsArea{
+	border: 1px solid black;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,9">
+      <item>
+       <widget class="QCheckBox" name="checkBoxQCProduct">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>200</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox{
+font: 20pt &quot;Microsoft YaHei UI&quot;;
+}
+
+QCheckBox::indicator{
+width: 60px;
+height: 60px;
+}
+
+QCheckBox::indicator::unchecked{
+	image: url(:/resources/img/UnChecked.png);
+}
+
+QCheckBox::indicator::checked{
+	image: url(:/resources/img/Checked.png);
+}</string>
+        </property>
+        <property name="text">
+         <string>质控品</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+        <property name="tristate">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="7,3">
+        <item>
+         <widget class="TurnPageGridView" name="QCProductsSetArea" native="true"/>
+        </item>
+        <item>
+         <widget class="CusLineEdit" name="QCProductsNumInput" native="true"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="QCProjectsNameArea">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#QCProjectsNameArea{
+	border: 1px solid black;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,9">
+      <item>
+       <widget class="QCheckBox" name="checkBoxQCProjects">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>120</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCheckBox{
+font: 20pt &quot;Microsoft YaHei UI&quot;;
+}
+
+QCheckBox::indicator{
+width: 60px;
+height: 60px;
+}
+
+QCheckBox::indicator::unchecked{
+	image: url(:/resources/img/UnChecked.png);
+}
+
+QCheckBox::indicator::checked{
+	image: url(:/resources/img/Checked.png);
+}</string>
+        </property>
+        <property name="text">
+         <string>项目名称:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="TurnPageGridView" name="QCProjectNameSetArea" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="SelectAllBtn">
+       <property name="minimumSize">
+        <size>
+         <width>145</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+       </property>
+       <property name="text">
+        <string>全选</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ConfirmBtn">
+       <property name="minimumSize">
+        <size>
+         <width>145</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+       </property>
+       <property name="text">
+        <string>确定</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="returnBtn">
+       <property name="minimumSize">
+        <size>
+         <width>145</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+       </property>
+       <property name="text">
+        <string>返回</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TurnPageGridView</class>
+   <extends>QWidget</extends>
+   <header location="global">TurnPageGridView.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CusClockTimeAdjust</class>
+   <extends>QWidget</extends>
+   <header location="global">CusClockTimeAdjust.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CusLineEdit</class>
+   <extends>QWidget</extends>
+   <header location="global">CusLineEdit.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

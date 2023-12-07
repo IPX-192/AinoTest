@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PageMain</class>
+ <widget class="QWidget" name="PageMain">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>997</width>
+    <height>676</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="10,1">
+   <item>
+    <widget class="QWidget" name="mainInfoWidget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#mainInfoWidget{
+border: 1px solid black;
+}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="2,8">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="OperationGuide" name="operationGuide" native="true"/>
+      </item>
+      <item>
+       <widget class="MachineInfo" name="SystemMachineInfo" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="tipsWidget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#tipsWidget{
+border: 1px solid black;
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font: 26pt &quot;Arial&quot;;</string>
+        </property>
+        <property name="text">
+         <string>提示: XXXXXXXXXXXXXXXX</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>OperationGuide</class>
+   <extends>QWidget</extends>
+   <header location="global">OperationGuide.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MachineInfo</class>
+   <extends>QWidget</extends>
+   <header location="global">MachineInfo.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QCResult</class>
+ <widget class="QWidget" name="QCResult">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1157</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" rowstretch="9,1">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="CusTableView" name="QCResultTable" native="true"/>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="ReJudgeBtn">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+       </property>
+       <property name="text">
+        <string>重新判定</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="QueryBtn">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+       </property>
+       <property name="text">
+        <string>查询</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ExportBtn">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+       </property>
+       <property name="text">
+        <string>导出</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="DetailBtn">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+       </property>
+       <property name="text">
+        <string>详情</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="LISBtn">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+       </property>
+       <property name="text">
+        <string>LIS发送</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="PrintBtn">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+       </property>
+       <property name="text">
+        <string>打印</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="DeleteBtn">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+       </property>
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CusTableView</class>
+   <extends>QWidget</extends>
+   <header location="global">CusTableView.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

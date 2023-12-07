@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QCSettingAddByManual</class>
+ <widget class="QWidget" name="QCSettingAddByManual">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1339</width>
+    <height>925</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,2">
+   <item>
+    <layout class="QGridLayout" name="gridLayout" rowstretch="9,1,1" columnstretch="10,10,1">
+     <item row="1" column="0">
+      <widget class="CusLineEdit" name="GroupNumber" native="true"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="CusLineEdit" name="QCName" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>150</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="CusLineEdit" name="TrackIndexNumber" native="true"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="CusLineEdit" name="IndexNUmber" native="true"/>
+     </item>
+     <item row="0" column="2">
+      <widget class="QCheckBox" name="checkBox">
+       <property name="text">
+        <string>联合质控品</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,8">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">font: 22pt &quot;Microsoft YaHei UI&quot;;</string>
+         </property>
+         <property name="text">
+          <string>质控模式：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="QCModelCombox">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>80</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,8">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
+         </property>
+         <property name="text">
+          <string>有效期:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ValuedDateBtn">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 14pt &quot;Microsoft YaHei UI&quot;;</string>
+         </property>
+         <property name="text">
+          <string>点击选择日期</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,1">
+     <item>
+      <widget class="TurnPageGridView" name="widget" native="true"/>
+     </item>
+     <item>
+      <widget class="QWidget" name="ProjectArea" native="true">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
+          </property>
+          <property name="text">
+           <string>项目</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="CusLineEdit" name="targetInput" native="true"/>
+        </item>
+        <item>
+         <widget class="CusLineEdit" name="SDInput" native="true"/>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,10">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="styleSheet">
+             <string notr="true">font: 20pt &quot;Microsoft YaHei UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>单位:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="CusAdjustBox" name="UnitSelect">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="SaveBtn">
+            <property name="minimumSize">
+             <size>
+              <width>145</width>
+              <height>45</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+            </property>
+            <property name="text">
+             <string>保存</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="ReturnBtn">
+            <property name="minimumSize">
+             <size>
+              <width>145</width>
+              <height>45</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnNomal.png);
+padding: -1;}
+QPushButton:pressed{
+font: 700 13pt &quot;Microsoft YaHei UI&quot;;
+color: #F2F2F2;
+border-image: url(:/resources/img/common/btnClicked.png);
+padding: -1;}
+</string>
+            </property>
+            <property name="text">
+             <string>返回</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CusLineEdit</class>
+   <extends>QWidget</extends>
+   <header location="global">CusLineEdit.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CusAdjustBox</class>
+   <extends>QFrame</extends>
+   <header location="global">CusAdjustBox.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TurnPageGridView</class>
+   <extends>QWidget</extends>
+   <header location="global">TurnPageGridView.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
